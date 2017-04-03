@@ -44,3 +44,6 @@ tmp/
 
 # OSX
 .DS_Store
+
+# CI
+.coveralls.yml
