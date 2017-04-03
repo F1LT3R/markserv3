@@ -10,8 +10,8 @@
   "scripts": {
     "test": "xo ./lib/**/*",
     "coverx": "istanbul cover _mocha --include-all-sources -x lib/**/*.spec.js -- ./lib/**/*.spec.js",
-    "cover": "istanbul cover _mocha -x lib/**/*.spec.js -- lib/**/*.spec.js ",
-    "coveralls": "npm run cover --report lcovonly && cat coverage/lcov.info | coveralls",
+    "cover": "istanbul cover _mocha -x **/*.spec.js ./lib/**/*.spec.js --report lcovonly",
+    "coveralls": "npm run cover && cat coverage/lcov.info | coveralls",
     "preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
   },
