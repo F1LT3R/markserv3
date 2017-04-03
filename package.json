@@ -10,8 +10,8 @@
   "scripts": {
     "test": "xo ./lib/**/* && npm run cover",
     "cover": "istanbul cover _mocha --include-all-sources -x **/*.spec.js -- ./lib/**/*.spec.js",
-	"coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-	"preinstall": "rm -rf node_modules/app || true",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
   },
   "repository": {
@@ -75,6 +75,7 @@
     ]
   },
   "dependencies": {
-    "fs-extra": "^2.1.2"
+    "fs-extra": "^2.1.2",
+    "portfinder": "^1.0.13"
   }
 }
