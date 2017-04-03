@@ -8,9 +8,8 @@
     "markserv": "markserv.js"
   },
   "scripts": {
-    "test3": "xo ./lib/**/* && mocha ./lib/**/*.spec.js --recursive -G && istanbul cover _mocha --include-all-sources -x **/*.spec.js -- ./lib/**/*.spec.js -R spec -h -G",
-    "test2": "xo ./lib/**/* && mocha ./lib/**/*.spec.js --recursive -G && istanbul cover _mocha --include-all-sources -x **/*.spec.js -- ./lib/**/*.spec.js -R spec -h -G",
-    "cover": "istanbul cover _mocha",
+    "test": "xo ./lib/**/* && mocha ./lib/**/*.spec.js --recursive && npm run cover",
+    "cover": "istanbul cover _mocha --include-all-sources -x **/*.spec.js -- ./lib/**/*.spec.js",
 	"coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
 	"preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
