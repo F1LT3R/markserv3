@@ -9,8 +9,8 @@
   },
   "scripts": {
     "test": "xo ./lib/**/* && npm run coveralls",
-    "cover": "istanbul cover _mocha -x **/*.spec.js --include-all-sources ./lib/**/*.js",
-    "coveralls": "npm run cover && cat coverage/lcov.info | coveralls",
+    "cover": "istanbul cover _mocha -x **/*.spec.js --include-all-sources lib/**/*.js",
+    "coveralls": "npm run cover && cat coverage/lcov.info | ./node_modules/.bin/coveralls",
     "preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
   },
