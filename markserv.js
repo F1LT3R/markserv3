@@ -1,5 +1,10 @@
-const server = require('app/lib/http/server')
-// const requests = require('app/lib/http/requests')
+#!/usr/bin/env node
+const init = require('app/lib/core/init')
 
-// const serverInstance = server.create(8001, 'localhost', requests.handler)
-// console.log(serverInstance)
+const CLI = !module.parent
+
+if (CLI) {
+	init(process.argv)
+}
+
+module.exports = init
