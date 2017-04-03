@@ -8,8 +8,7 @@
     "markserv": "markserv.js"
   },
   "scripts": {
-    "test": "xo ./lib/**/*",
-    "coverx": "istanbul cover _mocha --include-all-sources -x lib/**/*.spec.js -- ./lib/**/*.spec.js",
+    "test": "xo ./lib/**/* && npm run coveralls",
     "cover": "istanbul cover _mocha -x **/*.spec.js ./lib/**/*.js",
     "coveralls": "npm run cover && cat coverage/lcov.info | coveralls",
     "preinstall": "rm -rf node_modules/app || true",
