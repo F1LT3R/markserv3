@@ -9,8 +9,9 @@
   },
   "scripts": {
     "test": "xo ./lib/**/*",
-    "cover": "istanbul cover _mocha --include-all-sources -x **/*.spec.js -- ./lib/**/*.spec.js",
-    "coveralls": "npm run cover -- --report lcovonly && ls -ls && cat ./coverage/lcov.info | coveralls",
+    "coverx": "istanbul cover _mocha --include-all-sources -x **/*.spec.js -- ./lib/**/*.spec.js",
+    "cover": "istanbul cover _mocha -- ./lib/**/*.spec.js && ls -la ./coverage",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
   },
