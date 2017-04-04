@@ -62,7 +62,7 @@
     },
     "overrides": [
       {
-        "files": "**/Markconf.*",
+        "files": "**/Markconf.js",
         "rules": {
           "unicorn/filename-case": [
             "error",
@@ -71,6 +71,13 @@
             }
           ]
         }
+    },
+      {
+        "files": "**/Markconf.spec.js",
+        "rules": {
+          "unicorn/filename-case": 0
+        }
+
       }
     ]
   },
