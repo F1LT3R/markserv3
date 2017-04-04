@@ -3,14 +3,14 @@
   "version": "1.0.0-alpha.0",
   "description": "Serve Markdown content from a directory and reaload as you edit in realtime.",
   "preferGlobal": true,
-  "main": "markserv.js",
+  "main": "./lib/markserv.js",
   "bin": {
     "markserv": "./lib/markserv.js"
   },
   "scripts": {
     "test": "xo ./**/*.js && npm run cover",
     "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -x **/*.spec.js **/*.js -- --recursive",
-    "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -x **/*.spec.js **/*.js --recursive && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
+    "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -x **/*.spec.js **/*.js -- --recursive && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
     "preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
   },
