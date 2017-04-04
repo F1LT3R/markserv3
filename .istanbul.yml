@@ -4,7 +4,7 @@ instrumentation:
     extensions:
         - .js
     default-excludes: true
-    excludes: ['*.spec.js', '**/*.spec.js']
+    excludes: ["*.spec.js", "**/*.spec.js"]
     include-all-sources: true
 reporting:
     reports:
