@@ -8,9 +8,9 @@
     "markserv": "./lib/markserv.js"
   },
   "scripts": {
-    "test": "xo ./**/* && npm run cover",
-    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -x **/*.spec.js --include-all-sources **/*.js",
-    "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha  -x **/*.spec.js --include-all-sources **/*.js && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
+    "test": "xo ./**/*.js && ./node_modules/.bin/_mocha ./lib/**/*.spec.js --recursive && npm run cover",
+    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -x ./**/*.spec.js --include-all-sources ./**/*.js",
+    "coveralls": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha  -x ./**/*.spec.js --include-all-sources ./**/*.js && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
     "preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
   },
@@ -62,7 +62,7 @@
     },
     "overrides": [
       {
-        "files": "**/Markconf.js",
+        "files": "./**/Markconf.js",
         "rules": {
           "unicorn/filename-case": [
             "error",
@@ -73,7 +73,7 @@
         }
       },
       {
-        "files": "**/Markconf.spec.js",
+        "files": "./**/Markconf.spec.js",
         "rules": {
           "unicorn/filename-case": 0
         }
