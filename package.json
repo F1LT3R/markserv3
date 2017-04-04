@@ -36,6 +36,7 @@
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "coveralls": "^2.13.0",
+    "git-hooks": "^1.1.8",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "mocha-lcov-reporter": "^1.3.0",
@@ -71,13 +72,12 @@
             }
           ]
         }
-    },
+      },
       {
         "files": "**/Markconf.spec.js",
         "rules": {
           "unicorn/filename-case": 0
         }
-
       }
     ]
   },
