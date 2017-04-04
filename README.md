@@ -7,3 +7,4 @@
 [![Npm Version](https://img.shields.io/npm/v/markserv3.svg)](https://www.npmjs.com/package/markserv3)
 [![Github Issues](https://img.shields.io/github/issues/f1lt3r/markserv3.svg)](https://github.com/F1LT3R/markserv3/issues)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/markserv-cli.svg)](https://gitter.im/markserv)
+[![Known Vulnerabilities](https://snyk.io/test/github/f1lt3r/markserv3/badge.svg)](https://snyk.io/test/github/f1lt3r/markserv3)
