@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "xo ./**/*.js && npm run cover",
-    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js",
+    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js && echo '\nView report: coverage/lcov-report/index.html\n'",
     "coveralls": "npm run cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
     "preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
@@ -63,7 +63,7 @@
     },
     "overrides": [
       {
-        "files": "./**/Markconf.js",
+        "files": "Markconf.js",
         "rules": {
           "unicorn/filename-case": [
             "error",

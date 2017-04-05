@@ -7,5 +7,6 @@ instrumentation:
     excludes: ["*.spec.js", "**/*.spec.js"]
     include-all-sources: true
 reporting:
+    print: detail
     reports:
         - lcov

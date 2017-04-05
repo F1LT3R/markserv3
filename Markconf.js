@@ -8,4 +8,4 @@ const Markconf = {
 	]
 }
 
-exports = Markconf
+module.exports = Markconf
