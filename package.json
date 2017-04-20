@@ -51,7 +51,8 @@
       "beforeEach",
       "before",
       "after",
-      "afterEach"
+      "afterEach",
+      "__dirname"
     ],
     "rules": {
       "import/no-extraneous-dependencies": 0,
