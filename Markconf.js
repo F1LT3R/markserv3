@@ -2,8 +2,16 @@ const Markconf = {
 	routes: [
 		{
 			path: '**/*.md',
-			module: 'markserv-contrib-markdown',
-			template: 'partials/index.html'
+			module: 'lib/modules/markdown/markserv-markdown'
+		},
+		{
+			path: '**/',
+			module: 'lib/modules/dir/markserv-dir',
+			template: 'lib/modules/dir/markserv-dir.html'
+		},
+		{
+			path: '**/*',
+			module: 'lib/modules/file/markserv-file'
 		}
 	]
 }
