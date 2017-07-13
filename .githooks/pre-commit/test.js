@@ -1,2 +1,2 @@
 #!/bin/bash
-npm test
+yarn test
