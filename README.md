@@ -1,4 +1,4 @@
-![Mark3 Logo](doc/mark-logo.png)
+![Markserv3 Logo](doc/markserv-logo.png)
 
 # Markserv3
 
