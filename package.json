@@ -8,7 +8,7 @@
     "markserv": "./lib/markserv.js"
   },
   "scripts": {
-    "test": "xo && npm run cover",
+    "test": "xo && yarn run cover",
     "_cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js && echo \"View report: coverage/lcov-report/index.html\"",
     "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js",
     "coveralls": "npm run cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
