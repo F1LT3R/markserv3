@@ -9,8 +9,7 @@
   },
   "scripts": {
     "test": "xo && npm run cover",
-    "cover_": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js && echo \"View report: coverage/lcov-report/index.html\"",
-    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js",
+    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js && echo \"View report: coverage/lcov-report/index.html\"",
     "coveralls": "npm run cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
     "preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
@@ -38,8 +37,7 @@
     "fs-extra": "^2.1.2",
     "handlebars": "^4.0.10",
     "meow": "^3.7.0",
-    "micromatch": "^2.3.11",
-    "send": "^0.14.1"
+    "micromatch": "^2.3.11"
   },
   "devDependencies": {
     "chai": "^3.5.0",
