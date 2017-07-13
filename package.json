@@ -8,8 +8,9 @@
     "markserv": "./lib/markserv.js"
   },
   "scripts": {
-    "test": "xo ./**/*.js && npm run cover",
-    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js && echo \"View report: coverage/lcov-report/index.html\"",
+    "test": "xo && npm run cover",
+    "cover_": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js && echo \"View report: coverage/lcov-report/index.html\"",
+    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha ./lib/*.js ./lib/**/*.js",
     "coveralls": "npm run cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls -v",
     "preinstall": "rm -rf node_modules/app || true",
     "postinstall": "ln -s ../ node_modules/app"
@@ -33,6 +34,7 @@
   },
   "homepage": "https://github.com/f1lt3r/markserv3#readme",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "fs-extra": "^2.1.2",
     "handlebars": "^4.0.10",
     "meow": "^3.7.0",
@@ -84,7 +86,7 @@
         }
       },
       {
-        "files": "./**/Markconf.spec.js",
+        "files": "lib/Markconf.spec.js",
         "rules": {
           "unicorn/filename-case": 0
         }
